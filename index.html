@@ -17,10 +17,10 @@
 @font-face{font-family:Saira;src:url(fonts/saira-pl.woff2) format("woff2");font-weight:100 900;font-display:swap;unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
 @font-face{font-family:Inter;src:url(fonts/inter-rdzen.woff2) format("woff2");font-weight:400 700;font-display:swap;unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013-2014,U+2018-2019,U+201C-201E,U+2022,U+2026,U+20AC}
 @font-face{font-family:Inter;src:url(fonts/inter-pl.woff2) format("woff2");font-weight:400 700;font-display:swap;unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
-@font-face{font-family:"Saira fb";src:local("Arial Narrow"),local("Arial");size-adjust:98%;ascent-override:96%;descent-override:26%}
+@font-face{font-family:"Saira fb";src:local("Arial");size-adjust:98%;ascent-override:96%;descent-override:26%}
 @font-face{font-family:"Inter fb";src:local("Arial");size-adjust:107%;ascent-override:90%}
 /* kolory z logo: czerwień #D01E29, grafit #222222, szary napisu #888 (tu ciemniejszy #5E6168 dla kontrastu); motyw: ukośne cięcie z litery "i" i przecinka w logo + ukośniki z hasła "dla domu / rolnictwa / przemysłu" */
-:root{--red:#D01E29;--red-d:#B3141E;--ink:#222222;--dk:#1B1C20;--txt:#24262B;--mut:#5E6168;--g:#F2F3F5;--line:#DDDFE3;--hh:78px;--w:min(calc(100vw - 32px),1840px);--H:Saira,"Saira fb","Arial Narrow",Arial,sans-serif}
+:root{--red:#D01E29;--red-d:#B3141E;--ink:#222222;--dk:#1B1C20;--txt:#24262B;--mut:#5E6168;--g:#F2F3F5;--line:#DDDFE3;--hh:78px;--w:min(calc(100vw - 32px),1840px);--H:Saira,"Saira fb",Arial,sans-serif}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:var(--hh);-webkit-text-size-adjust:100%}
 body{margin:0;font-family:Inter,"Inter fb",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:clamp(16px,.2vw + 15px,18.5px);line-height:1.6;color:var(--txt);background:#fff;overflow-x:hidden}
@@ -58,9 +58,9 @@ p{margin:0}
 .hero .ph img{width:100%;height:100%;object-fit:cover}
 .hero::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none}
 .hero .txt{position:relative;z-index:2;width:var(--w);margin:0 auto}
-.hero h1{color:#fff;font-weight:700;font-size:clamp(2.3rem,1.1rem + 3.6vw,5.6rem);line-height:.98;max-width:13ch;text-wrap:balance}
+.hero h1{color:#fff;font-weight:700;font-size:clamp(2.3rem,1.1rem + 3.6vw,5.6rem);line-height:.98;max-width:8.6em;text-wrap:balance}
 .hero h1 span{display:flex;align-items:center;gap:14px;font-weight:500;font-size:.42em;line-height:1.2;margin-top:.6em;color:#fff}
-.hero .lead{margin-top:20px;font-size:clamp(1rem,.9rem + .35vw,1.24rem);line-height:1.5;color:#EEF0F3;max-width:46ch}
+.hero .lead{margin-top:20px;font-size:clamp(1rem,.9rem + .35vw,1.24rem);line-height:1.5;color:#EEF0F3;max-width:30.5em}
 .hero .cta{display:flex;flex-wrap:wrap;align-items:center;gap:14px 28px;margin-top:32px}
 .hero .tel{color:#fff;font-size:1.35rem}
 .hero .tel small{color:#D9DCE1;font-size:.8rem}
@@ -196,7 +196,7 @@ footer.st{background:#141519;color:#B9BCC3;padding:clamp(48px,5vw,80px) 0 0;font
 .st-g{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px}
 .st-g h4{margin:0 0 12px;font:700 1.08rem/1.2 var(--H);color:#fff}
 .st-g a{text-decoration:none}.st-g a:hover{color:#fff}
-.st-g img{height:40px;width:auto}
+.st-g img{width:200px;max-width:100%;height:auto}
 .st-dol{margin-top:clamp(34px,4vw,56px);padding:20px 0 24px;border-top:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;font-size:.875rem}
 .wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
 .wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
